@@ -1,0 +1,4 @@
+STRINGTABLE oarrow
+{
+    Oarrow                    "Arrow";
+}

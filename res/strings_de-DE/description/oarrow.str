@@ -1,0 +1,14 @@
+STRINGTABLE oarrow
+{
+    OARROW_LENGTH             "L\u00e4nge";
+    OARROW_ROTATION_SEGMENTS  "Rotationssegmente";
+    OARROW_BASE               "Basis";
+    OARROW_BASE_RADIUS        "Radius";
+    OARROW_TIP                "Spitze";
+    OARROW_TIP_RADIUS         "Radius";
+    OARROW_TIP_LENGTH         "L\u00e4nge";
+    OARROW_BEVEL              "Abflachen";
+    OARROW_BEVEL_ENABLE       "Aktivieren";
+    OARROW_BEVEL_RATIO        "Verh\u00e4ltnis";
+    OARROW_BEVEL_SUBDIVISIONS "Unterteilung";
+}

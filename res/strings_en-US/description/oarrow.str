@@ -1,0 +1,14 @@
+STRINGTABLE oarrow
+{
+    OARROW_LENGTH             "Length";
+    OARROW_ROTATION_SEGMENTS  "Rotation Segments";
+    OARROW_BASE               "Base";
+    OARROW_BASE_RADIUS        "Radius";
+    OARROW_TIP                "Tip";
+    OARROW_TIP_RADIUS         "Radius";
+    OARROW_TIP_LENGTH         "Length"; 
+    OARROW_BEVEL              "Bevel";
+    OARROW_BEVEL_ENABLE       "Enable";
+    OARROW_BEVEL_RATIO        "Ratio";
+    OARROW_BEVEL_SUBDIVISIONS "Subdivisions";
+}
