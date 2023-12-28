@@ -1,5 +1,6 @@
 STRINGTABLE oarrow
 {
+    Oarrow                    "Arrow";
     OARROW_LENGTH             "Length";
     OARROW_ROTATION_SEGMENTS  "Rotation Segments";
     OARROW_BASE               "Base";

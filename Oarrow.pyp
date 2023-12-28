@@ -7,10 +7,11 @@ Description:
 
 """
 
+from typing import Tuple, Union
 import c4d
 import os
 
-from c4d import GeListNode
+from c4d import Description, GeListNode
 
 class Oarrow(c4d.plugins.ObjectData):
     def __init__(self, *args):
@@ -192,7 +193,7 @@ class Oarrow(c4d.plugins.ObjectData):
 
         elif orientation == c4d.PRIM_AXIS_YP:
             for i, point in enumerate(points):
-                points[i] = c4d.Vector(-point.x, point.z, -point.y)
+                points[i] = c4d.Vector(point.x, point.z, -point.y)
 
         elif orientation == c4d.PRIM_AXIS_YN:
             for i, point in enumerate(points):
@@ -228,11 +229,9 @@ if __name__ == "__main__":
     if bmp.InitWith(fn)[0] != c4d.IMAGERESULT_OK:
         raise MemoryError("Failed to initialize the BaseBitmap.")
     
-    plugin_id = 1062186
-
     # Registers the object plugin
-    c4d.plugins.RegisterObjectPlugin(id=plugin_id,
-                                     str=c4d.plugins.GeLoadString(plugin_id),
+    c4d.plugins.RegisterObjectPlugin(id=c4d.Oarrow,
+                                     str=c4d.plugins.GeLoadString(c4d.Oarrow),
                                      g=Oarrow,
                                      description="oarrow",
                                      icon=bmp,

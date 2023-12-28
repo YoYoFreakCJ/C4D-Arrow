@@ -3,6 +3,7 @@
 
 enum
 {
+    Oarrow                        = 1062186,
     OARROW_LENGTH                 = 1000,
     OARROW_ROTATION_SEGMENTS      = 1001,
 	OARROW_BASE                   = 2000,
