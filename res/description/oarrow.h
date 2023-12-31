@@ -3,18 +3,24 @@
 
 enum
 {
-    Oarrow                        = 1062186,
-    OARROW_LENGTH                 = 1000,
-    OARROW_ROTATION_SEGMENTS      = 1001,
+    Oarrow                        = 1000,
+    OARROW_TARGET,
+    OARROW_TARGET_OFFSET,
+    OARROW_LENGTH,
+    OARROW_FLAT_ENABLE,
+    OARROW_ROTATION_SEGMENTS,
+    OARROW_FLAT_ORIENTATION,
+    OARROW_FLAT_ORIENTATION_XP    = 0,
+    OARROW_FLAT_ORIENTATION_XN,
+    OARROW_FLAT_ORIENTATION_YP,
+    OARROW_FLAT_ORIENTATION_YN,
+    OARROW_FLAT_ORIENTATION_ZP,
+    OARROW_FLAT_ORIENTATION_ZN,
 	OARROW_BASE                   = 2000,
-    OARROW_BASE_RADIUS            = 2001,
+    OARROW_BASE_RADIUS,
     OARROW_TIP                    = 3000,
-    OARROW_TIP_RADIUS             = 3001,
-    OARROW_TIP_LENGTH             = 3002,
-    OARROW_BEVEL                  = 4000,
-    OARROW_BEVEL_ENABLE           = 4001,
-    OARROW_BEVEL_RATIO            = 4002,
-    OARROW_BEVEL_SUBDIVISIONS     = 4003
+    OARROW_TIP_RADIUS,
+    OARROW_TIP_LENGTH
 };
 
 #endif

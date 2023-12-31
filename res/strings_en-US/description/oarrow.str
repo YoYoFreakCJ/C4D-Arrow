@@ -1,15 +1,21 @@
 STRINGTABLE oarrow
 {
-    Oarrow                    "Arrow";
-    OARROW_LENGTH             "Length";
-    OARROW_ROTATION_SEGMENTS  "Rotation Segments";
-    OARROW_BASE               "Base";
-    OARROW_BASE_RADIUS        "Radius";
-    OARROW_TIP                "Tip";
-    OARROW_TIP_RADIUS         "Radius";
-    OARROW_TIP_LENGTH         "Length"; 
-    OARROW_BEVEL              "Bevel";
-    OARROW_BEVEL_ENABLE       "Enable";
-    OARROW_BEVEL_RATIO        "Ratio";
-    OARROW_BEVEL_SUBDIVISIONS "Subdivisions";
+    Oarrow                     "Arrow";
+    OARROW_TARGET              "Target";
+    OARROW_TARGET_OFFSET       "Offset";
+    OARROW_LENGTH              "Length";
+    OARROW_FLAT_ENABLE         "Flat";
+    OARROW_ROTATION_SEGMENTS   "Rotation Segments";
+    OARROW_BASE                "Base";
+    OARROW_BASE_RADIUS         "Radius";
+    OARROW_TIP                 "Tip";
+    OARROW_TIP_RADIUS          "Radius";
+    OARROW_TIP_LENGTH          "Length"; 
+    OARROW_FLAT_ORIENTATION    "Flat Orientation";
+    OARROW_FLAT_ORIENTATION_XP "+X";
+    OARROW_FLAT_ORIENTATION_XN "-X";
+    OARROW_FLAT_ORIENTATION_YP "+Y";
+    OARROW_FLAT_ORIENTATION_YN "-Y";
+    OARROW_FLAT_ORIENTATION_ZP "+Z";
+    OARROW_FLAT_ORIENTATION_ZN "-Z";
 }
