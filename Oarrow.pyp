@@ -455,5 +455,5 @@ if __name__ == "__main__":
                                   g=Tcalculatearrowlength,
                                   description="tcalculatearrowlength",
                                   icon=None,
-                                  info=c4d.TAG_EXPRESSION | c4d.TAG_VISIBLE,
+                                  info=c4d.TAG_EXPRESSION,
                                   disklevel=1)
