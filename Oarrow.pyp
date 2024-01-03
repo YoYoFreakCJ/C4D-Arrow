@@ -243,11 +243,14 @@ class Oarrow(c4d.plugins.ObjectData):
             return self.__on_MSG_DESCRIPTION_POSTSETPARAMETER(node, data)
         
         elif type == c4d.MSG_DESCRIPTION_CHECKDRAGANDDROP:
-            return False
 
-            dragged_element = data["element"]
-            is_same_object = node == dragged_element
-            return not is_same_object
+            current_id: c4d.DescID = data['id']
+            
+            if target_id.IsPartOf(current_id)[0]:
+                dragged_element = data["element"]
+                is_same_object = node == dragged_element
+                data['result'] = not is_same_object
+                return True
 
         return True
     
@@ -488,13 +491,11 @@ if __name__ == "__main__":
                                      g=Oarrow,
                                      description="oarrow",
                                      icon=bmp,
-                                     info=c4d.OBJECT_GENERATOR | c4d.PLUGINFLAG_HIDEPLUGINMENU,
-                                     disklevel=1)
+                                     info=c4d.OBJECT_GENERATOR | c4d.PLUGINFLAG_HIDEPLUGINMENU)
     
     c4d.plugins.RegisterTagPlugin(id=Tcalculatearrowlength_PLUGINID,
                                   str="Calculate Arrow Length",
                                   g=Tcalculatearrowlength,
                                   description="tcalculatearrowlength",
                                   icon=None,
-                                  info=c4d.TAG_EXPRESSION,
-                                  disklevel=1)
+                                  info=c4d.TAG_EXPRESSION)
